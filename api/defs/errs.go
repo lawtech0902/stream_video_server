@@ -19,4 +19,12 @@ var (
 		HttpSC: 401,
 		Error:  Err{Error: "User authentication failed", ErrorCode: "002"},
 	}
+	ErrorDBError = ErrorResponse{
+		HttpSC: 500,
+		Error:  Err{Error: "DB ops failed", ErrorCode: "003"},
+	}
+	ErrorInternalFaults = ErrorResponse{
+		HttpSC: 500,
+		Error:  Err{Error: "Internal service error", ErrorCode: "004"},
+	}
 )

@@ -1,5 +1,10 @@
 package defs
 
+type SignedUp struct {
+	Success bool `json:"success"`
+	SessionId string `json:"session_id"`
+}
+
 type UserCredential struct {
 	UserName string `json:"user_name"`
 	Pwd      string `json:"pwd"`
@@ -21,5 +26,5 @@ type Comment struct {
 
 type SimpleSession struct {
 	UserName string `json:"user_name"`
-	TTL int64 `json:"ttl"`
+	TTL      int64  `json:"ttl"`
 }
