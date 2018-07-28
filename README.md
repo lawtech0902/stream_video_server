@@ -1,1 +1,2 @@
-golang构建流媒体视频网站
+### golang构建流媒体视频网站
+非常基础的利用golang原生http和httprouter建立的简单流媒体视频网站
